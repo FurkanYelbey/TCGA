@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-path = "E:\TCGA\\TCGA\\files" # path folder
+path = os.getcwd()+"\\files" # path folder
 
 dirs = os.chdir(path)
 
