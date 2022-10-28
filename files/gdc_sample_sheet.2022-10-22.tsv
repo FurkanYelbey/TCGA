@@ -1,6 +1,0 @@
-File ID	File Name	Data Category	Data Type	Project ID	Case ID	Sample ID	Sample Type
-afdf58d1-5814-4e78-a92e-26fbcc97da32	0a5dab01-33ff-41d1-8842-7b7f18a6efe0.rna_seq.augmented_star_gene_counts.tsv	Transcriptome Profiling	Gene Expression Quantification	TCGA-LUAD	TCGA-91-6828	TCGA-91-6828-01A	Primary Tumor
-119e7a6c-7fd1-4a2d-bfdc-35cb13d39414	6460f151-7102-476d-b03b-fb4ea776b1ea.rna_seq.augmented_star_gene_counts.tsv	Transcriptome Profiling	Gene Expression Quantification	TCGA-LUAD	TCGA-49-AARN	TCGA-49-AARN-01A	Primary Tumor
-29bb005f-53d0-44e6-8626-d6bbe0dba8be	d53203c7-5070-455b-aec3-ce01f32186de.rna_seq.augmented_star_gene_counts.tsv	Transcriptome Profiling	Gene Expression Quantification	TCGA-LUAD	TCGA-67-3771	TCGA-67-3771-01A	Primary Tumor
-a135a2b4-bc6a-4dd6-baa9-f08ab2d4971a	c41a2347-8277-494e-90c6-f1918223388b.rna_seq.augmented_star_gene_counts.tsv	Transcriptome Profiling	Gene Expression Quantification	TCGA-LUAD	TCGA-86-6562	TCGA-86-6562-01A	Primary Tumor
-51ec5a15-11e8-435a-a3e0-2a99690309b9	7276835e-ce0e-4fc6-a329-27d936c136ba.rna_seq.augmented_star_gene_counts.tsv	Transcriptome Profiling	Gene Expression Quantification	TCGA-LUAD	TCGA-55-8094	TCGA-55-8094-01A	Primary Tumor
