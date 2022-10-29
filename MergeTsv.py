@@ -26,7 +26,7 @@ def MergeTsv(filesPath, sampleSheetPath, outputPath, selectedColumn, dataType):
            #     #x = len(gene_values)
            #     #y = x%10000
 
-                gene_values = file1[3].tolist()
+                gene_values = file1[3].tolist()#selectedColumn yaz indexe
 
                 mergeIndex = 0 #merged table patient name column index
                 for sampleIndex in range(len(sample)): #SampleCount
@@ -38,7 +38,7 @@ def MergeTsv(filesPath, sampleSheetPath, outputPath, selectedColumn, dataType):
 
                 file1 = pd.read_csv(file_path, sep='\t', header=None)
 
-                gene_values = file1[selectedColumn].tolist()
+                gene_values = file1[1].tolist()#selectedColumn yaz indexe
 
                 mergeIndex = 0
                 for sampleIndex in range(len(sample)):
@@ -48,7 +48,7 @@ def MergeTsv(filesPath, sampleSheetPath, outputPath, selectedColumn, dataType):
 
     gene_names = file1[0]
     df.insert(0, None, gene_names)
-    df.to_csv(outputPath+'\\example.tsv', sep="\t", index = False)
+    df.to_csv(outputPath+'\\example.tsv', sep="\t", index = False)# outpputh path çalışıyor
     print("Success")
 
 #MergeTsv()
