@@ -81,6 +81,7 @@ check1.pack()
 #check1.grid(row=1, column=1)
 check2.pack()
 #check2.grid(row=2, column=1) """
+
 label = tk.Label(text='Please select a column').pack()
 
 columnOption = tk.IntVar(value=0)
