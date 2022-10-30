@@ -7,29 +7,6 @@
     <list default="true" id="7b022f82-ad13-41e9-be2f-8414aa669a8f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MergeTsv.py" beforeDir="false" afterPath="$PROJECT_DIR$/MergeTsv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/09728f38-787f-4868-b28d-8cf6afa3c71b.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/0a5dab01-33ff-41d1-8842-7b7f18a6efe0.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/119e7a6c-7fd1-4a2d-bfdc-35cb13d39414/6460f151-7102-476d-b03b-fb4ea776b1ea.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/119e7a6c-7fd1-4a2d-bfdc-35cb13d39414/logs/6460f151-7102-476d-b03b-fb4ea776b1ea.rna_seq.augmented_star_gene_counts.tsv.parcel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/29bb005f-53d0-44e6-8626-d6bbe0dba8be/d53203c7-5070-455b-aec3-ce01f32186de.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/29bb005f-53d0-44e6-8626-d6bbe0dba8be/logs/d53203c7-5070-455b-aec3-ce01f32186de.rna_seq.augmented_star_gene_counts.tsv.parcel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/51ec5a15-11e8-435a-a3e0-2a99690309b9/7276835e-ce0e-4fc6-a329-27d936c136ba.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/51ec5a15-11e8-435a-a3e0-2a99690309b9/logs/7276835e-ce0e-4fc6-a329-27d936c136ba.rna_seq.augmented_star_gene_counts.tsv.parcel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/6460f151-7102-476d-b03b-fb4ea776b1ea.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/7276835e-ce0e-4fc6-a329-27d936c136ba.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/96780e00-b519-4bec-a49b-c2cc2d19a744.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/98d020b1-0467-4131-a3cc-64d288d0e9e7.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Merge.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/a135a2b4-bc6a-4dd6-baa9-f08ab2d4971a/c41a2347-8277-494e-90c6-f1918223388b.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/a135a2b4-bc6a-4dd6-baa9-f08ab2d4971a/logs/c41a2347-8277-494e-90c6-f1918223388b.rna_seq.augmented_star_gene_counts.tsv.parcel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/a84ef848-a790-4e90-96b4-45b24c3aaaf4.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/aa305f5b-4c1d-4bc7-81d5-b2b999b327af.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/afdf58d1-5814-4e78-a92e-26fbcc97da32/0a5dab01-33ff-41d1-8842-7b7f18a6efe0.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/afdf58d1-5814-4e78-a92e-26fbcc97da32/logs/0a5dab01-33ff-41d1-8842-7b7f18a6efe0.rna_seq.augmented_star_gene_counts.tsv.parcel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/c41a2347-8277-494e-90c6-f1918223388b.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/d53203c7-5070-455b-aec3-ce01f32186de.rna_seq.augmented_star_gene_counts.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/gdc_sample_sheet.2022-10-22.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/gdc_sample_sheetasdasff.tsv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +57,8 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TCGA$ui.coverage" NAME="ui Coverage Results" MODIFIED="1667141809149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TCGA$game.coverage" NAME="game Coverage Results" MODIFIED="1666473465807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../PythSnake" />
-    <SUITE FILE_PATH="coverage/TCGA$MergeTsv.coverage" NAME="MergeTsv Coverage Results" MODIFIED="1666994175454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TCGA$MergeTsv.coverage" NAME="MergeTsv Coverage Results" MODIFIED="1667141793727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
