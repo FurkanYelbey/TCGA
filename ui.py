@@ -1,3 +1,4 @@
+from inspect import getfile
 from MergeTsv import *
 import tkinter as tk
 from tkinter import Button, filedialog
@@ -11,6 +12,7 @@ outputPath = ''
 dataFilesPath = ''
 selectedColumn = 0
 dataType = 0
+mergedFileName = tk.StringVar()
 
 def selectSampleSheetPath():
     global sampleSheetPath
@@ -38,24 +40,12 @@ def selectColumn(selectedColumnIndex):
     global selectedColumn
     selectedColumn = selectedColumnIndex
 
+def getFileName(*args):
+    global mergedFileName
+    mergedFileName = mergedFileNameBox.get()
 
 def Merge():
-    MergeTsv(dataFilesPath, sampleSheetPath, outputPath, selectedColumn, dataType)
-
-""" checkbox1Value=tk.IntVar(value=0)
-checkbox2Value=tk.IntVar(value=0) """
-
-""" def control():
-    if checkbox1Value.get() == 1:
-        check2.deselect()
-    if checkbox2Value.get() == 1:
-        check1.deselect()
-    if checkbox1Value.get() == 1:
-        selectedDataCategory = 1
-        return selectedDataCategory
-    elif checkbox2Value.get() == 1:
-        selectedDataCategory = 2
-        return selectedDataCategory """
+    MergeTsv(dataFilesPath, sampleSheetPath, outputPath, selectedColumn, dataType, mergedFileName.get())
 
 def showStatus(status):
     print(status)
@@ -74,13 +64,6 @@ for dataonvalue in range(1, 3):
         command=lambda:selectDataType(dataOption.get())
     )
     dataTypeButton.pack()
-
-""" check1 = tk.Checkbutton(TCGAUI, text='Transcriptome Profiling', variable=checkbox1Value, command=control)
-check2 = tk.Checkbutton(TCGAUI, text='Dna Methylation', variable=checkbox2Value, command=control)
-check1.pack()
-#check1.grid(row=1, column=1)
-check2.pack()
-#check2.grid(row=2, column=1) """
 
 label = tk.Label(text='Please select a column').pack()
 
@@ -110,6 +93,11 @@ outputPathBox = tk.Entry(TCGAUI, textvariable=outputPath, width= 60)
 outputPathBox.pack()
 outputPathSelectButton = Button(TCGAUI, text="Select output directory", command = selectOutputPath).pack()
 #outputPathSelectButton.grid(row=3, column=2)
+
+label = tk.Label(text='Please enter merged file name').pack()
+mergedFileNameBox = tk.Entry(TCGAUI, textvariable=mergedFileName, validate="focusout", validatecommand=getFileName, width= 60)
+mergedFileNameBox.pack()
+#mergedFileName.trace_add('write', getFileName)# reads only first letter
 
 mergeButton = Button(TCGAUI, text="Merge", command=Merge).pack()
 

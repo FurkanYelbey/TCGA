@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-def MergeTsv(filesPath, sampleSheetPath, outputPath, selectedColumn, dataType):
+def MergeTsv(filesPath, sampleSheetPath, outputPath, selectedColumn, dataType, mergedFileName):
     #path = os.getcwd()+"\\files"
     path=filesPath
 
@@ -48,7 +48,7 @@ def MergeTsv(filesPath, sampleSheetPath, outputPath, selectedColumn, dataType):
 
     gene_names = file1[0]
     df.insert(0, None, gene_names)
-    df.to_csv(outputPath+'\\example.tsv', sep="\t", index = False)# outpputh path çalışıyor
+    df.to_csv(outputPath+'\\'+mergedFileName+'.tsv', sep="\t", index = False)# outpputh path çalışıyor
     print("Success")
 
 #MergeTsv()
