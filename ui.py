@@ -1,7 +1,7 @@
-from inspect import getfile
 from MergeTsv import *
 import tkinter as tk
 from tkinter import Button, filedialog
+import win32api
 
 TCGAUI = tk.Tk()
 TCGAUI.geometry('600x600')
@@ -45,7 +45,11 @@ def getFileName(*args):
     mergedFileName = mergedFileNameBox.get()
 
 def Merge():
-    MergeTsv(dataFilesPath, sampleSheetPath, outputPath, selectedColumn, dataType, mergedFileName.get())
+    try:
+        MergeTsv(dataFilesPath, sampleSheetPath, outputPath, selectedColumn, dataType, mergedFileName.get())
+
+    except AttributeError:
+        win32api.MessageBox(None, "You selected wrong data type. Please select again", "Warning")
 
 def showStatus(status):
     print(status)
