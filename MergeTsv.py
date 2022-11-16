@@ -44,7 +44,7 @@ def MergeTsv(filesPath, sampleSheetPath, outputPath, selectedColumn, dataType, m
                         mergeIndex = 0
                         for sampleIndex in range(len(sample)):
                             if file== sampleFile[sampleIndex]:
-                                df.insert(mergeIndex, sample[sampleIndex], gene_values)
+                                df.insert(mergeIndex, sample[sampleIndex], gene_values, allow_duplicates= True)
                                 mergeIndex += 1
     except KeyError:
         win32api.MessageBox(None, "You selected the blank columns. Please select again", "Warning")
@@ -53,8 +53,10 @@ def MergeTsv(filesPath, sampleSheetPath, outputPath, selectedColumn, dataType, m
         try:
             gene_names = file1[0]
             df.insert(0, None, gene_names)
-            df.to_csv(outputPath + '\\' + mergedFileName + '.tsv', sep="\t", index=False)  # outpputh path çalışıyor
+            df.to_csv(outputPath + '\\' + mergedFileName + '.tsv', sep="\t", index=False)
+            del df#destroy dataframe after merging process
         except UnboundLocalError:
             win32api.MessageBox(None, "You selected wrong data type. Please select again", "Warning")
-        else:
-            print("Success")
+        """ else:
+            #print("Successfully merged.")
+            win32api.MessageBox(None, "Successfully merged.", "") """
